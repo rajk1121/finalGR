@@ -1,0 +1,158 @@
+extends property-single
+block content
+ .container
+  .d-flex.top
+    .d-flex.flex-fill
+      span#vertical
+      .inline-block
+        h2(style='margin: 2rem !important;') #{title}
+        p(style='margin: 2rem !important;') #{location}
+    .flex-fill.text-right
+      a(href='../../../home') Home 
+      | /
+      a(href='../property-grid')  Property Grid
+  #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.top-item.active
+        img.d-block.w-100.top-img(src=`${link1}` alt='First slide')
+      .carousel-item.top-item
+        img.d-block.top-img.w-100(src=`${link2}` alt='Second slide')
+      .carousel-item.top-item
+        img.d-block.top-img.w-100(src=`${link3}` alt='Third slide')
+    a.carousel-control-prev(href='#carouselExampleFade' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleFade' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+  .d-flex.flex-wrap
+    .col-lg-5.margin.flex-fill
+      .loan-description
+        h2
+          span.glyphicon.glyphicon-home
+          |  #{rent}
+      h1.text-left.quick Quick Summary
+      div
+        .d-flex
+          .flex-fill
+            h5
+              | Property ID:
+              h5
+          .flex-fill.text-right
+            | #{id}
+        .d-flex
+          .flex-fill
+            h5
+              | Location:
+              h5
+          .flex-fill.text-right
+            | #{location}
+        .d-flex
+          .flex-fill
+            h5
+              | Property type:
+              h5
+          .flex-fill.text-right
+            | #{type}
+        .d-flex
+          .flex-fill
+            h5
+              | Status:
+              h5
+          .flex-fill.text-right
+            | #{status}
+        .d-flex
+          .flex-fill
+            h5
+              | Area:
+              h5
+          .flex-fill.text-right
+            | #{area}
+        .d-flex
+          .flex-fill
+            h5
+              | Beds:
+              h5
+          .flex-fill.text-right
+            | #{beds}
+        .d-flex
+          .flex-fill
+            h5
+              | Baths:
+              h5
+          .flex-fill.text-right
+            | #{baths}
+        .d-flex
+          .flex-fill
+            h5
+              | Garages:
+              h5
+          .flex-fill.text-right
+            | #{garages}
+    .col-lg-7.desc.flex-fill
+      .flex-column
+        h1 Property Description
+        .p-desc
+          i.fas.fa-check-circle
+          span #{desc1}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc2}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc3}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc4}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc5}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc6}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc7}
+          br
+          br
+          i.fas.fa-check-circle
+          span #{desc8}
+        h1 Amenities
+        ul.d-flex.flex-wrap
+          .flex-fill
+            li
+              i.fas.fa-certificate
+              | #{one}
+            li
+              i.fas.fa-certificate
+              | #{two}
+            li
+              i.fas.fa-certificate
+              | #{three}
+          .flex-fill
+            li
+              i.fas.fa-certificate
+              | #{four}
+            li
+              i.fas.fa-certificate
+              | #{five}
+            li
+              i.fas.fa-certificate
+              | #{six}
+          .flex-fill.amen-col
+            li
+              i.fas.fa-certificate
+              | #{seven}
+            li
+              i.fas.fa-certificate
+              | #{eight}
+            li
+              i.fas.fa-certificate
+              | #{nine}
+  

@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Document
+  style.
+    input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+    /* Add a background color and some padding around the form */
+    .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+.container
+  form(action='/acard/' method="POST")
+    label(for='id') Id
+    input#id(type='text', name='id', placeholder='Your id..')
+    label(for='fname') First Name
+    input#fname(type='text', name='firstname', placeholder='Your name..')
+    label(for='lname') Last Name
+    input#lname(type='text', name='lastname', placeholder='Your last name..')
+    label(for='rank') Rank
+    input#rank(type='text', name='rank' ,placeholder='Your rank..')
+    label(for='description') Description
+    input#description(type='text', name='description', placeholder='Your description..')
+    label(for='Phone') Phone
+    input#phone(type='text', name='phone' ,placeholder='Your phone number..')
+    label(for='email') Email
+    input#email(type='text', name='email', placeholder='Your email..')
+    label(for='skype') Skype
+    input#skype(type='text', name='skype', placeholder='Your skype id..')
+    label(for='linkedin') LinkedIn
+    input#linkedin(type='text', name='linkedin', placeholder='Your linkedin..')
+    label(for='img') Img
+    input#img(type='text', name='img' ,placeholder='Your img..')
+    label(for='img') Img1
+    input#img1(type='text' ,name='img1' ,placeholder='Your img1..')
+    label(for='img2') Img2
+    input#img2(type='text' ,name='img2', placeholder='Your img2..')
+    label(for='img3') Img3
+    input#img3(type='text', name='img3', placeholder='Your img3..')
+    label(for='img4') Img4
+    input#img4(type='text', name='img4', placeholder='Your img4..')
+    input(type="submit")

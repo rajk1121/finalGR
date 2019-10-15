@@ -1,0 +1,33 @@
+extends property-grid
+block content 
+  -for(let i=0 ; i<json.length ; i++){
+   .card.text-center.col-xs-12.col-sm-12.col-md-4
+    .img
+      .lp-container(style= `background-image: url(${json[i].img})`)
+        // <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+        .bc
+        #bottom-left.bottom-left PRICE | #{json[i].rent}
+        #top-right.top-right
+          a(href=`property-grid/${json[i].links}` style='color: white !important')
+            | Know
+            | More &gt;
+      #green
+        section.d-flex.text-left
+          p.flex-fill.text-left
+            span.lp-title Area
+            br
+            span.lp-value #{json[i].area}
+            span.align-top 2
+          p.flex-fill.text-left
+            span.lp-title Baths
+            br
+            span.lp-value #{json[i].baths}
+          p.flex-fill.text-left
+            span.lp-title Rooms
+            br
+            span.lp-value #{json[i].rooms}
+          p.flex-fill.text-left
+            span.lp-title Garages
+            br
+            span.lp-value #{json[i].garages}
+  -}
